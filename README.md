@@ -14,6 +14,10 @@
 [![Docker](https://img.shields.io/docker/automated/nfcore/sarek.svg)](https://hub.docker.com/r/nfcore/sarek)
 [![Get help on Slack](http://img.shields.io/badge/slack-nf--core%20%23sarek-4A154B?logo=slack)](https://nfcore.slack.com/channels/sarek)
 
+```
+nextflow run main.nf -profile test,docker -w /vol1/work/
+```
+
 ## Introduction
 
 Sarek is a workflow designed to detect variants on whole genome or targeted sequencing data.
