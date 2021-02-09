@@ -14,6 +14,8 @@
 [![Docker](https://img.shields.io/docker/automated/nfcore/sarek.svg)](https://hub.docker.com/r/nfcore/sarek)
 [![Get help on Slack](http://img.shields.io/badge/slack-nf--core%20%23sarek-4A154B?logo=slack)](https://nfcore.slack.com/channels/sarek)
 
+If you are using aws parallel cluster make sure you use version 2.4.1 that comes with Slurm 18.08.6-2. The later versions of Slurm that come with version 19.\*.\* do not allow memory specification and result in pipeline failure.
+
 ```
 nextflow run main.nf -profile test,docker -w /vol1/work/
 ```
